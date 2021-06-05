@@ -1,0 +1,33 @@
+/* * {
+  width: 100wh;
+  height: 100vh;
+} */
+
+body {
+  background-color: aquamarine;
+  margin: 30px;
+  padding: 20px;
+  border: solid 1px black;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.address,
+.greeting {
+  color: crimson;
+}
+
+.content {
+  color: darkorchid;
+  font-size: 18px;
+  margin: 40px 0;
+}
+
+table {
+  border: solid 1px black;
+  align-items: center;
+  padding: 10px;
+}
