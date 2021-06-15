@@ -6,6 +6,7 @@
 .calculator {
   border: 4px solid black;
   padding: 5px 5px;
+  padding-bottom: 20px;
   border-radius: 10px;
   display: inline-block;
   background-color: rgb(24, 29, 71);
@@ -21,7 +22,7 @@ table {
 }
 
 input {
-  width: 420px;
+  width: 400px;
   height: 70px;
   font-size: 45px;
   padding: 10px;
@@ -34,7 +35,7 @@ input {
 button {
   font-size: 40px;
   border-radius: 10px;
-  width: 102px;
+  width: 98px;
   height: 84px;
   background-color: rgba(202, 113, 211, 0.904);
 }
