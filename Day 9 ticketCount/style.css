@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ticketContainer {
+  padding-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen {
+  height: 20px;
+  width: 20%;
+  background-color: rgb(66, 5, 5);
+  margin-bottom: 10px;
+}
+
+.seatStats {
+  display: flex;
+  font-size: 2rem;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.ticketBox {
+  width: 90%;
+  height: 600px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.box {
+  border: 3px solid rgba(199, 68, 56, 0.993);
+  background-color: rgb(200, 43, 43);
+}
+
+.box:active {
+  background-color: rgb(221, 56, 56);
+}
+
+.bookedBox {
+  background-color: rgb(158, 16, 16);
+}
+/* .seatStats {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.box {
+  border: 1px solid rgba(255, 24, 24, 0.787);
+} */
