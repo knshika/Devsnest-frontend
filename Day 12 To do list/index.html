@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Modal starts -->
+    <div class="modal" id="todo_create">
+      <div class="header">
+        <div class="title">Add your list</div>
+        <button class="closeModal" data-target="#todo_create">&times;</button>
+      </div>
+      <div class="body">
+        <input type="text" id="todo_input" />
+        <input type="submit" value="Add Todo" id="todo_submit" />
+      </div>
+    </div>
+    <!-- Modal ends -->
+    <div class="todo-container">
+      <div class="status" id="no_status">
+        <h1>No Status</h1>
+        <button id="add_btn" data-target="#todo_create">+ Add ToDo</button>
+        <div class="todo" draggable="true">
+          Do THA 13
+          <span class="close"> &times; </span>
+        </div>
+      </div>
+      <div class="status">
+        <h1>In Progress</h1>
+      </div>
+      <div class="status">
+        <h1>Completed</h1>
+      </div>
+      <div class="status">
+        <h1>Backlogs</h1>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
