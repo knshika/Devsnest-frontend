@@ -1,10 +1,11 @@
-// const calorieArr
+import "./style.css";
 
-const CaloriesCard = () => {
+const CaloriesCard = (props) => {
+  const { food, calories } = props;
   return (
     <div className="calories">
-      <h1 className="food">Pizza</h1>
-      <h2 className="description">you have consumed 56 cals today</h2>
+      <div className="food">{food}</div>
+      <div className="description">you have consumed {calories} cals today</div>
     </div>
   );
 };
