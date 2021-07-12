@@ -1,7 +1,8 @@
-import CaloriesCard from "./caloriesCard";
+import CaloriesCard from "./CaloriesCard";
+import React, { useState } from "react";
 import "./style.css";
 
-const calorieArr = [
+const defaultCalorieArr = [
   { food: "Pizza", calories: 56 },
   { food: "Burger", calories: 69 },
   { food: "Coke", calories: 500 },
@@ -14,14 +15,26 @@ const calorieArr = [
   { food: "Chocolate", calories: 100 },
 ];
 
-const DisplayCard = () => {
+const DisplayCaloriesCard = () => {
+  const [calorieArr, setCalorieArr] = useState(defaultCalorieArr);
+
+  const deleteCalorieCard = (food) => {
+    const updatedCalorieArr = calorieArr.filter((item) => item.food !== food);
+    setCalorieArr(updatedCalorieArr);
+    console.log(updatedCalorieArr);
+  };
+
   return (
     <div className="body17">
       <header>Calorie App</header>
       <div className="content">
         <div className="calorieBox">
           {calorieArr.map((element) => (
-            <CaloriesCard food={element.food} calories={element.calories} />
+            <CaloriesCard
+              deleteCalorieCard={deleteCalorieCard}
+              food={element.food}
+              calories={element.calories}
+            />
           ))}
         </div>
       </div>
@@ -29,4 +42,4 @@ const DisplayCard = () => {
   );
 };
 
-export default DisplayCard;
+export default DisplayCaloriesCard;

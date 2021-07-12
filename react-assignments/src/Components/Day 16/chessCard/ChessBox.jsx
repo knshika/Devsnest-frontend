@@ -17,15 +17,17 @@ const Chess = () => {
     );
   };
   return (
-    <div className="chessBoard">
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
+    <div className="day16">
+      <div className="chessBoard">
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+        <Row />
+      </div>
     </div>
   );
 };
