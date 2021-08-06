@@ -1,7 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+
 
 function WeatherCard() {
-    const placeData={}
+    const placeData = useSelector(state => state.placeData)
+
     return (
        <div className="container">
            <div className="row">
