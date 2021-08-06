@@ -4,9 +4,9 @@
 }
 
 .card {
-  /* width: 500px;
-  height: 500px; */
-  padding: 20px;
+  width: 500px !important;
+  margin: auto;
+   padding: 20px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
