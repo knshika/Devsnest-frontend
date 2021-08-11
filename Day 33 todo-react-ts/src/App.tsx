@@ -1,8 +1,9 @@
 // import React, { FC, ReactElement } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles.css";
 import ThemeContext from "./ThemeContext";
 import ThemeToggle from "./ThemeToggle";
+import Todos from "./Todos";
 
 interface AppProps {
   title: string;
@@ -19,8 +20,10 @@ const App = ({ title }: AppProps) => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className="App">
+     
+      <div className={theme?"App dark":"App"}>
         <h1>{title}</h1>
+        <Todos/>
         {/* {counter !== null ? (
           <button
             onClick={() => {
@@ -30,6 +33,8 @@ const App = ({ title }: AppProps) => {
             {counter}
           </button>
         ) : null} */}
+       
+        
         <ThemeToggle />
       </div>
     </ThemeContext.Provider>

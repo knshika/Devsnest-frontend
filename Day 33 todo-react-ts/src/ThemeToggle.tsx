@@ -6,7 +6,7 @@ const ThemeToggle = () => {
   const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext);
 
   return (
-    <button className={theme?"todo-theme dark":"todo-theme"} onClick={() => setTheme(!theme)}>{theme ? "Dark" : "Light"}</button>
+    <button className={theme?"todo-theme dark":"todo-theme"} onClick={() => setTheme(!theme)}>{theme ? "Light" : "Dark"}</button>
   );
 };
 
