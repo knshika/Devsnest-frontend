@@ -4,12 +4,13 @@ import { useSelector } from 'react-redux'
 
 function WeatherCard() {
     const placeData = useSelector(state => state.placeData)
+    const theme = useSelector(state => state.theme)
 
     return (
        <div className="container">
            <div className="row">
            <div className=" d-flex align-items-center col-12 col-lg-4 mt-4 m-auto">
-            <div className="card m-auto">
+            <div className={theme?"card dark m-auto":"card m-auto"}>
               {placeData.location ? (
                 <>
                   <div className="location">

@@ -5,6 +5,7 @@ import { updatePlace, updatePlaceData } from '../actions'
 
 function Form() {
 const place = useSelector(state => state.place)
+const theme = useSelector(state => state.theme)
 const dispatch = useDispatch()
 
     return (
@@ -13,13 +14,13 @@ const dispatch = useDispatch()
             <div className="col-12 d-flex justify-content-center align-items-center">
                 <input
                     type="text"
-                    className="p-1 px-2 m-2"
+                    className={theme?"input dark p-1 px-2 m-2":"input p-1 px-2 m-2"}
                     value={place}
                     onChange={(e)=>{
                         dispatch(updatePlace(e.target.value))
                     }}
                     />
-                <button className="btn btn-dark m-1"
+                <button className={theme?"btn dark m-1":"btn btn-dark m-1"}
                 onClick={
                     ()=>{
                         dispatch(updatePlaceData(place))

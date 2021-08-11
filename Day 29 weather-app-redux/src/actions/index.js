@@ -24,3 +24,9 @@ export const updatePlaceData=(place)=>{
             }); 
     }
 }
+
+export const toggleTheme=()=>{
+  return{
+    type:"TOGGLE_THEME",
+  }
+}
