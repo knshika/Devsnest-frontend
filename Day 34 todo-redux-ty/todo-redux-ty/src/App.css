@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  display: flex;
+  
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+ 
+}
+
+.App button,input{
+  padding: 8px;
+  margin: 10px;
+  font-size: 1.2rem;
+}

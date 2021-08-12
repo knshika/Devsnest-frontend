@@ -1,0 +1,14 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.App *{
+  padding: 8px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
